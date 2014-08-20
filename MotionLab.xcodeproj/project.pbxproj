@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3A3C101119A54C1A00C46109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C101019A54C1A00C46109 /* AppDelegate.swift */; };
 		3A3C101319A54C1A00C46109 /* OneShotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C101219A54C1A00C46109 /* OneShotVC.swift */; };
-		3A3C101519A54C1A00C46109 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C101419A54C1A00C46109 /* SecondViewController.swift */; };
+		3A3C101519A54C1A00C46109 /* ProgressiveAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C101419A54C1A00C46109 /* ProgressiveAnimationVC.swift */; };
 		3A3C101819A54C1A00C46109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C101619A54C1A00C46109 /* Main.storyboard */; };
 		3A3C101A19A54C1A00C46109 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C101919A54C1A00C46109 /* Images.xcassets */; };
 		3A3C102619A54C1B00C46109 /* MotionLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C102519A54C1B00C46109 /* MotionLabTests.swift */; };
+		3A69904A19A555F500C3A7E1 /* ColorBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904919A555F500C3A7E1 /* ColorBlend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,13 @@
 		3A3C100F19A54C1A00C46109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3C101019A54C1A00C46109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A3C101219A54C1A00C46109 /* OneShotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneShotVC.swift; sourceTree = "<group>"; };
-		3A3C101419A54C1A00C46109 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A3C101419A54C1A00C46109 /* ProgressiveAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressiveAnimationVC.swift; sourceTree = "<group>"; };
 		3A3C101719A54C1A00C46109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A3C101919A54C1A00C46109 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A3C101F19A54C1B00C46109 /* MotionLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3C102419A54C1B00C46109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3C102519A54C1B00C46109 /* MotionLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionLabTests.swift; sourceTree = "<group>"; };
+		3A69904919A555F500C3A7E1 /* ColorBlend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 			children = (
 				3A3C101019A54C1A00C46109 /* AppDelegate.swift */,
 				3A3C101219A54C1A00C46109 /* OneShotVC.swift */,
-				3A3C101419A54C1A00C46109 /* SecondViewController.swift */,
+				3A3C101419A54C1A00C46109 /* ProgressiveAnimationVC.swift */,
 				3A3C101619A54C1A00C46109 /* Main.storyboard */,
 				3A3C101919A54C1A00C46109 /* Images.xcassets */,
 				3A3C100E19A54C1A00C46109 /* Supporting Files */,
+				3A69904919A555F500C3A7E1 /* ColorBlend.swift */,
 			);
 			path = MotionLab;
 			sourceTree = "<group>";
@@ -211,9 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3C101519A54C1A00C46109 /* SecondViewController.swift in Sources */,
+				3A3C101519A54C1A00C46109 /* ProgressiveAnimationVC.swift in Sources */,
 				3A3C101119A54C1A00C46109 /* AppDelegate.swift in Sources */,
 				3A3C101319A54C1A00C46109 /* OneShotVC.swift in Sources */,
+				3A69904A19A555F500C3A7E1 /* ColorBlend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
