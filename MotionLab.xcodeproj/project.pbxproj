@@ -14,6 +14,7 @@
 		3A3C101A19A54C1A00C46109 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C101919A54C1A00C46109 /* Images.xcassets */; };
 		3A3C102619A54C1B00C46109 /* MotionLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C102519A54C1B00C46109 /* MotionLabTests.swift */; };
 		3A69904A19A555F500C3A7E1 /* ColorBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904919A555F500C3A7E1 /* ColorBlend.swift */; };
+		3A69904C19A5590200C3A7E1 /* ManipulablePhysicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3A3C102419A54C1B00C46109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3C102519A54C1B00C46109 /* MotionLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionLabTests.swift; sourceTree = "<group>"; };
 		3A69904919A555F500C3A7E1 /* ColorBlend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlend.swift; sourceTree = "<group>"; };
+		3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulablePhysicsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				3A3C101919A54C1A00C46109 /* Images.xcassets */,
 				3A3C100E19A54C1A00C46109 /* Supporting Files */,
 				3A69904919A555F500C3A7E1 /* ColorBlend.swift */,
+				3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */,
 			);
 			path = MotionLab;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A69904C19A5590200C3A7E1 /* ManipulablePhysicsVC.swift in Sources */,
 				3A3C101519A54C1A00C46109 /* ProgressiveAnimationVC.swift in Sources */,
 				3A3C101119A54C1A00C46109 /* AppDelegate.swift in Sources */,
 				3A3C101319A54C1A00C46109 /* OneShotVC.swift in Sources */,

@@ -128,11 +128,57 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="27o-lk-xKd" kind="relationship" relationship="viewControllers" id="KDV-pp-Pni"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--ManipulablePhysics-->
+        <scene sceneID="HED-9U-NEZ">
+            <objects>
+                <viewController id="27o-lk-xKd" customClass="ManipulablePhysicsVC" customModule="MotionLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kQP-5P-hps"/>
+                        <viewControllerLayoutGuide type="bottom" id="ifz-eR-gNX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JCg-sQ-GT2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQ8-ij-d80">
+                                <rect key="frame" x="16" y="28" width="286" height="286"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manipulable Physics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqd-7q-cEm">
+                                        <rect key="frame" x="60" y="138" width="158" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sfp-cN-UXL" appends="YES" id="BPN-Di-Grb"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ManipulablePhysics" id="tq4-Yy-UGa"/>
+                    <connections>
+                        <outlet property="manipulable" destination="iQ8-ij-d80" id="QdE-bC-wnD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6D-DV-FRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sfp-cN-UXL">
+                    <connections>
+                        <action selector="gestureRecognizer:" destination="27o-lk-xKd" id="5yG-2d-D8J"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-63" y="862"/>
         </scene>
     </scenes>
     <resources>
