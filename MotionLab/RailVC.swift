@@ -61,7 +61,6 @@ class RailVC: UIViewController {
             if (escaping) {
                 animator?.addBehavior(gravity)
                 
-                
                 let time = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC))
                 let current_UUID=self.UUID
                 dispatch_after(time, dispatch_get_main_queue(), { () -> Void in
@@ -69,8 +68,6 @@ class RailVC: UIViewController {
                     self.railCar.center = self.rail.convertPoint(self.initialRailCarCenter!, fromView: self.view)
                     self.animator?.removeAllBehaviors()
                 })
-  
-                
             }
             else {
                 animator?.addBehavior(leftSpring)
