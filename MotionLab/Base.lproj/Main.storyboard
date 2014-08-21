@@ -130,6 +130,7 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="27o-lk-xKd" kind="relationship" relationship="viewControllers" id="KDV-pp-Pni"/>
                         <segue destination="5u1-dT-kVA" kind="relationship" relationship="viewControllers" id="zsC-W7-VqA"/>
+                        <segue destination="IhP-pT-FJW" kind="relationship" relationship="viewControllers" id="qGr-eo-BNe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -180,6 +181,34 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-63" y="862"/>
+        </scene>
+        <!--Projectile-->
+        <scene sceneID="5HL-wl-YxH">
+            <objects>
+                <viewController id="IhP-pT-FJW" customClass="ProjectileVC" customModule="MotionLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="onA-PX-FCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="gOb-eg-KVQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XGQ-Oa-iUc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2g3-Al-7Tt" appends="YES" id="q3Y-QP-5sz"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Projectile" id="iVZ-JQ-GcN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8s-2W-6O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2g3-Al-7Tt">
+                    <connections>
+                        <action selector="gestureRecognizer:" destination="IhP-pT-FJW" id="IuM-F8-aCD"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="158" y="1237"/>
         </scene>
         <!--Attractor-->
         <scene sceneID="qnk-aU-dRL">

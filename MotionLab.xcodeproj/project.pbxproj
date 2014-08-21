@@ -16,6 +16,7 @@
 		3A69904A19A555F500C3A7E1 /* ColorBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904919A555F500C3A7E1 /* ColorBlend.swift */; };
 		3A69904C19A5590200C3A7E1 /* ManipulablePhysicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */; };
 		3A69905019A56BCB00C3A7E1 /* AttractorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904F19A56BCB00C3A7E1 /* AttractorVC.swift */; };
+		3A69905219A57FE400C3A7E1 /* ProjectileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69905119A57FE400C3A7E1 /* ProjectileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3A69904919A555F500C3A7E1 /* ColorBlend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlend.swift; sourceTree = "<group>"; };
 		3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulablePhysicsVC.swift; sourceTree = "<group>"; };
 		3A69904F19A56BCB00C3A7E1 /* AttractorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractorVC.swift; sourceTree = "<group>"; };
+		3A69905119A57FE400C3A7E1 /* ProjectileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3A3C100E19A54C1A00C46109 /* Supporting Files */,
 				3A69904919A555F500C3A7E1 /* ColorBlend.swift */,
 				3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */,
+				3A69905119A57FE400C3A7E1 /* ProjectileVC.swift */,
 				3A69904F19A56BCB00C3A7E1 /* AttractorVC.swift */,
 			);
 			path = MotionLab;
@@ -224,6 +227,7 @@
 				3A3C101519A54C1A00C46109 /* ProgressiveAnimationVC.swift in Sources */,
 				3A3C101119A54C1A00C46109 /* AppDelegate.swift in Sources */,
 				3A69905019A56BCB00C3A7E1 /* AttractorVC.swift in Sources */,
+				3A69905219A57FE400C3A7E1 /* ProjectileVC.swift in Sources */,
 				3A3C101319A54C1A00C46109 /* OneShotVC.swift in Sources */,
 				3A69904A19A555F500C3A7E1 /* ColorBlend.swift in Sources */,
 			);
