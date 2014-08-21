@@ -21,6 +21,8 @@ class RailVC: UIViewController {
     
     var gravity : UIGravityBehavior? = nil
     
+    var UUID = NSUUID()
+    
     override  func viewDidLoad() {
         animator = UIDynamicAnimator(referenceView: self.view)
         initialRailCarCenter = self.view.convertPoint(railCar.center, fromView: rail)
@@ -31,9 +33,9 @@ class RailVC: UIViewController {
         railCar.center.x = sender.locationInView(rail).x
         if (sender.state == .Began) {
             animator?.removeAllBehaviors()
+            UUID=NSUUID()
         }
         if (sender.state == .Ended) {
-            
             //forbid rotation
             railCarBehavior = UIDynamicItemBehavior(items: [railCar!])
             railCarBehavior?.allowsRotation = false;
@@ -61,8 +63,9 @@ class RailVC: UIViewController {
                 
                 
                 let time = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC))
-                
+                let current_UUID=self.UUID
                 dispatch_after(time, dispatch_get_main_queue(), { () -> Void in
+                    if (current_UUID != self.UUID) { return }
                     self.railCar.center = self.rail.convertPoint(self.initialRailCarCenter!, fromView: self.view)
                     self.animator?.removeAllBehaviors()
                 })
