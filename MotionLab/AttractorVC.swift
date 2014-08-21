@@ -29,15 +29,7 @@ class AttractorVC: UIViewController {
         collisionBehavior = UICollisionBehavior(items: [m1,m2,m3])
         collisionBehavior?.setTranslatesReferenceBoundsIntoBoundaryWithInsets(UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0))
         animator?.addBehavior(collisionBehavior)
-
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func gestureRecognizer(sender: UIPanGestureRecognizer) {

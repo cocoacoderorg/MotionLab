@@ -17,6 +17,7 @@
 		3A69904C19A5590200C3A7E1 /* ManipulablePhysicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */; };
 		3A69905019A56BCB00C3A7E1 /* AttractorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69904F19A56BCB00C3A7E1 /* AttractorVC.swift */; };
 		3A69905219A57FE400C3A7E1 /* ProjectileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69905119A57FE400C3A7E1 /* ProjectileVC.swift */; };
+		3A69905419A584F400C3A7E1 /* RailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69905319A584F400C3A7E1 /* RailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulablePhysicsVC.swift; sourceTree = "<group>"; };
 		3A69904F19A56BCB00C3A7E1 /* AttractorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractorVC.swift; sourceTree = "<group>"; };
 		3A69905119A57FE400C3A7E1 /* ProjectileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectileVC.swift; sourceTree = "<group>"; };
+		3A69905319A584F400C3A7E1 /* RailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				3A69904B19A5590200C3A7E1 /* ManipulablePhysicsVC.swift */,
 				3A69905119A57FE400C3A7E1 /* ProjectileVC.swift */,
 				3A69904F19A56BCB00C3A7E1 /* AttractorVC.swift */,
+				3A69905319A584F400C3A7E1 /* RailVC.swift */,
 			);
 			path = MotionLab;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A69905419A584F400C3A7E1 /* RailVC.swift in Sources */,
 				3A69904C19A5590200C3A7E1 /* ManipulablePhysicsVC.swift in Sources */,
 				3A3C101519A54C1A00C46109 /* ProgressiveAnimationVC.swift in Sources */,
 				3A3C101119A54C1A00C46109 /* AppDelegate.swift in Sources */,
@@ -297,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -18,14 +18,7 @@ class ManipulablePhysicsVC: UIViewController {
         animator = UIDynamicAnimator(referenceView: self.view)
         dynamicBehavior = UIDynamicItemBehavior(items: [manipulable])
         animator!.addBehavior(dynamicBehavior)
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func gestureRecognizer(sender: UIPanGestureRecognizer) {
