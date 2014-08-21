@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-293"/>
         </scene>
-        <!--ProgressiveAnim-->
+        <!--ProgAnim-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ProgressiveAnimationVC" customModule="MotionLab" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,7 +101,7 @@
                             <constraint firstItem="ej5-n5-O85" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="dYc-7R-70W"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ProgressiveAnim" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="ProgAnim" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="manipulable" destination="kpr-sN-M2V" id="w04-kl-f3y"/>
                     </connections>
