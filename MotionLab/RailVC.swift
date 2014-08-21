@@ -24,6 +24,7 @@ class RailVC: UIViewController {
     override  func viewDidLoad() {
         animator = UIDynamicAnimator(referenceView: self.view)
         initialRailCarCenter = self.view.convertPoint(railCar.center, fromView: rail)
+        self.navigationController.interactivePopGestureRecognizer.enabled = false;
     }
     
     @IBAction func gestureRecognizer(sender: UIPanGestureRecognizer) {
