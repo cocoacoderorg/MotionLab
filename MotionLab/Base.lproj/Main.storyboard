@@ -114,7 +114,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="750" y="293"/>
+            <point key="canvasLocation" x="1610" y="-315"/>
         </scene>
         <!--Rail-->
         <scene sceneID="Uwd-Bt-6eY">
@@ -158,7 +158,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="612" y="511"/>
+            <point key="canvasLocation" x="1868" y="651"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -226,7 +226,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-63" y="862"/>
+            <point key="canvasLocation" x="3267" y="-197"/>
         </scene>
         <!--Projectile-->
         <scene sceneID="5HL-wl-YxH">
@@ -254,7 +254,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="158" y="1237"/>
+            <point key="canvasLocation" x="742" y="689"/>
         </scene>
         <!--Attractor-->
         <scene sceneID="qnk-aU-dRL">
@@ -307,7 +307,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-206" y="1539"/>
+            <point key="canvasLocation" x="2578" y="-197"/>
         </scene>
     </scenes>
     <resources>
