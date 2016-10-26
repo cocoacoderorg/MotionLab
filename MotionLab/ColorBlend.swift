@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
-func blend(c1: UIColor, c2: UIColor, var alpha: CGFloat) -> UIColor {
+func blend(_ c1: UIColor, c2: UIColor, alpha: CGFloat) -> UIColor {
+    var alpha = alpha
     alpha = min(1.0, max(0, alpha))
     let beta = 1 - alpha;
     var r1 = CGFloat(0), g1 = CGFloat(0), b1 = CGFloat(0), a1 = CGFloat(0), r2 = CGFloat(0), g2 = CGFloat(0), b2 = CGFloat(0), a2 = CGFloat(0)

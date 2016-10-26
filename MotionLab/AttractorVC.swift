@@ -24,20 +24,20 @@ class AttractorVC: UIViewController {
         animator = UIDynamicAnimator(referenceView: self.view)
         
         gravityBehavior = UIGravityBehavior(items: [m1,m2,m3])
-        animator?.addBehavior(gravityBehavior)
+        animator?.addBehavior(gravityBehavior!)
         
         collisionBehavior = UICollisionBehavior(items: [m1,m2,m3])
-        collisionBehavior?.setTranslatesReferenceBoundsIntoBoundaryWithInsets(UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0))
-        animator?.addBehavior(collisionBehavior)
+        collisionBehavior?.setTranslatesReferenceBoundsIntoBoundary(with: UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0))
+        animator?.addBehavior(collisionBehavior!)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func gestureRecognizer(sender: UIPanGestureRecognizer) {
-        manipulable.center = sender.locationInView(self.view)
+    @IBAction func gestureRecognizer(_ sender: UIPanGestureRecognizer) {
+        manipulable.center = sender.location(in: self.view)
         switch(sender.state) {
             
-        case .Changed:
-            gravityBehavior?.gravityDirection = CGVectorMake((manipulable.center.x - self.view.center.x) / self.view.center.x, (manipulable.center.y - self.view.center.y) / self.view.center.y)
+        case .changed:
+            gravityBehavior?.gravityDirection = CGVector(dx: (manipulable.center.x - self.view.center.x) / self.view.center.x, dy: (manipulable.center.y - self.view.center.y) / self.view.center.y)
             
             
             

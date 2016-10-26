@@ -17,30 +17,30 @@ class ManipulablePhysicsVC: UIViewController {
         super.viewDidLoad()
         animator = UIDynamicAnimator(referenceView: self.view)
         dynamicBehavior = UIDynamicItemBehavior(items: [manipulable])
-        animator!.addBehavior(dynamicBehavior)
+        animator!.addBehavior(dynamicBehavior!)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func gestureRecognizer(sender: UIPanGestureRecognizer) {
+    @IBAction func gestureRecognizer(_ sender: UIPanGestureRecognizer) {
         switch(sender.state) {
-        case .Began:
-            let touchedLocationInManipulable = sender.locationInView(manipulable)
+        case .began:
+            let touchedLocationInManipulable = sender.location(in: manipulable)
             let offset = UIOffsetMake(touchedLocationInManipulable.x - manipulable.bounds.size.width/2, touchedLocationInManipulable.y - manipulable.bounds.size.height/2);
-            let touchedLocationInParent = sender.locationInView(self.view)
+            let touchedLocationInParent = sender.location(in: self.view)
             attachmentBehavior = UIAttachmentBehavior(item: manipulable, offsetFromCenter: offset, attachedToAnchor: touchedLocationInParent)
-            animator!.addBehavior(attachmentBehavior)
+            animator!.addBehavior(attachmentBehavior!)
 
             
-        case .Changed:
+        case .changed:
             var anchorPoint = attachmentBehavior!.anchorPoint
-            var transform = sender.translationInView(self.view)
+            let transform = sender.translation(in: self.view)
             anchorPoint.x += transform.x;
             anchorPoint.y += transform.y;
             attachmentBehavior!.anchorPoint = anchorPoint;
-            sender.setTranslation(CGPointZero, inView: self.view)
+            sender.setTranslation(CGPoint.zero, in: self.view)
             
-        case .Ended:
-            animator!.removeBehavior(attachmentBehavior)
+        case .ended:
+            animator!.removeBehavior(attachmentBehavior!)
             attachmentBehavior = nil;
             
         default:

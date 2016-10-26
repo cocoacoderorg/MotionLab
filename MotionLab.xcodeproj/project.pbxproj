@@ -177,9 +177,11 @@
 					3A3C100A19A54C1A00C46109 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = P5GM95Q9VV;
+						LastSwiftMigration = 0800;
 					};
 					3A3C101E19A54C1B00C46109 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3A3C100A19A54C1A00C46109;
 					};
 				};
@@ -353,6 +355,7 @@
 				INFOPLIST_FILE = MotionLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -364,6 +367,7 @@
 				INFOPLIST_FILE = MotionLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -382,6 +386,7 @@
 				INFOPLIST_FILE = MotionLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MotionLab.app/MotionLab";
 			};
 			name = Debug;
@@ -397,6 +402,7 @@
 				INFOPLIST_FILE = MotionLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MotionLab.app/MotionLab";
 			};
 			name = Release;

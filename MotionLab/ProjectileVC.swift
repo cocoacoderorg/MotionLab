@@ -18,30 +18,30 @@ class ProjectileVC: UIViewController {
     override func viewDidLoad() {
         animator = UIDynamicAnimator(referenceView: self.view)
         collisionBehavior = UICollisionBehavior()
-        animator?.addBehavior(collisionBehavior)
+        animator?.addBehavior(collisionBehavior!)
         collisionBehavior?.translatesReferenceBoundsIntoBoundary = true;
     }
 
-    @IBAction func gestureRecognizer(sender: UIPanGestureRecognizer) {
+    @IBAction func gestureRecognizer(_ sender: UIPanGestureRecognizer) {
         switch(sender.state) {
-        case .Began:
-            let location = sender.locationInView(self.view)
-            projectile = UIView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(20, 20)))
+        case .began:
+            let location = sender.location(in: self.view)
+            projectile = UIView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 20, height: 20)))
             projectile?.center = location
-            projectile?.backgroundColor = UIColor.redColor()
+            projectile?.backgroundColor = UIColor.red
             self.view.addSubview(projectile!)
         
-        case .Changed:
-            let location = sender.locationInView(self.view)
+        case .changed:
+            let location = sender.location(in: self.view)
             projectile?.center = location
         
-        case .Ended:
-            let velocity = sender.velocityInView(self.view)
+        case .ended:
+            let velocity = sender.velocity(in: self.view)
             
             dynamicItemBehavior = UIDynamicItemBehavior(items:[projectile!])
-            dynamicItemBehavior?.addLinearVelocity(velocity, forItem: projectile)
-            animator?.addBehavior(dynamicItemBehavior)
-            collisionBehavior?.addItem(projectile)
+            dynamicItemBehavior?.addLinearVelocity(velocity, for: projectile!)
+            animator?.addBehavior(dynamicItemBehavior!)
+            collisionBehavior?.addItem(projectile!)
             
             
         default:
